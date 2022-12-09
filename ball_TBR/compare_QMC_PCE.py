@@ -1,5 +1,5 @@
-from openmc_UQ_QMC import results as results_QMC
 from openmc_UQ_PCE import results as results_PCE
+from openmc_UQ_QMC import results as results_QMC
 import matplotlib.pyplot as plt
 import numpy as np
 

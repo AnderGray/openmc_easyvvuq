@@ -12,7 +12,7 @@ params = {
     "Enrich": {"type": "float", "default": 50}
 }
 
-encoder = uq.encoders.GenericEncoder(template_fname='openmc_TBR.py', delimiter='$', target_filename='run_model.py')
+encoder = uq.encoders.GenericEncoder(template_fname='openmc.template', delimiter='$', target_filename='run_model.py')
 
 #copy_encoder_sett = uq.encoders.CopyEncoder("settings.xml", "settings.xml")
 #copy_encoder_geom = uq.encoders.CopyEncoder("geometry.xml", "geometry.xml")
