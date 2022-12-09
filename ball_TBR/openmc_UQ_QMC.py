@@ -56,7 +56,6 @@ plt.title(f"N_samples: {n_samps}")
 plt.xlabel("TBR")
 plt.ylabel("freq")
 plt.savefig("hist_qmc.png")
-plt.show()
 
 samps_sort = np.sort(np.array(samps['TBR']).squeeze())
 iis = np.linspace(0,1,samps_sort.size)
@@ -66,7 +65,6 @@ plt.title(f"N_samples: {n_samps}")
 plt.xlabel("TBR")
 plt.ylabel("ecdf")
 plt.savefig("ecdf_qmc.png")
-plt.show()
 
 #results.plot_moments(qoi="TBR", ylabel="Temperature", xlabel="Time", alpha=0.2)
 # results.plot_sobols_first(

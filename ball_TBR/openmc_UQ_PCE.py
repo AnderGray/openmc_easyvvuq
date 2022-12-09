@@ -57,14 +57,12 @@ plt.title(f"pce order: {pce_order}")
 plt.xlabel("TBR")
 plt.ylabel("cdf")
 plt.savefig("PCE_cdf_order_{pce_order}.png")
-plt.show()
 
 plt.plot(xs, dist.pdf(xs))
 plt.title(f"pce order: {pce_order}")
 plt.xlabel("TBR")
 plt.ylabel("pdf")
 plt.savefig(f"PCE_pdf_order_{pce_order}.png")
-plt.show()
 
 #results.plot_moments(qoi="TBR", ylabel="Temperature", xlabel="Time", alpha=0.2)
 # results.plot_sobols_first(
