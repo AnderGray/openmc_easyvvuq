@@ -31,7 +31,7 @@ campaign = uq.Campaign(name='uq_openmc_', params=params, actions=actions)
 
 vary = { "Dens": cp.Normal(7.85, 0.15), "Enrich": cp.Uniform(20, 80)}
 
-n_samps = 2**8
+n_samps = 2**10
 #my_sampler = uq.sampling.PCESampler(vary=vary, polynomial_order=pce_order)
 my_sampler = uq.sampling.qmc.QMCSampler(vary=vary, n_mc_samples = n_samps)
 
